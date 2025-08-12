@@ -2,6 +2,8 @@
 
 <div align="center">
 
+![QuickNews Frontend](Frontend.png)
+
 An intelligent web application that leverages the **[Google Gemini API](https://aistudio.google.com/)** to instantly summarize news articles, answer complex questions, and deliver insights through a modern, conversational UI.
 
 </div>
@@ -169,7 +171,7 @@ Distributed under the MIT License. See `LICENSE` for details.
 
 ## 📬 Contact
 
-**Muhammad**
+**Muhammad Beig**
 - 📧 Email: muhammed.beig@icloud.com
-- 💼 LinkedIn: [Muhammad](https://linkedin.com/in/muhammedbeig)
+- 💼 LinkedIn: [Muhammad Beig](https://linkedin.com/in/muhammad-beig)
 - 🔗 Project Link: [QuickNews on GitHub](https://github.com/Muhammedbeig/QuickNews)
