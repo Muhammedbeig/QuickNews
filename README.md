@@ -171,7 +171,7 @@ Distributed under the MIT License. See `LICENSE` for details.
 
 ## 📬 Contact
 
-**Muhammad Beig**
+**Muhammad**
 - 📧 Email: muhammed.beig@icloud.com
-- 💼 LinkedIn: [Muhammad Beig](https://linkedin.com/in/muhammad-beig)
+- 💼 LinkedIn: [Muhammad](https://linkedin.com/in/muhammedbeig)
 - 🔗 Project Link: [QuickNews on GitHub](https://github.com/Muhammedbeig/QuickNews)
