@@ -1,0 +1,174 @@
+/* Base styles */
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #010101;
+    color: #E5E7EB;
+}
+
+/* Helper for gradient text */
+.gradient-text {
+    background: linear-gradient(90deg, #ff2d55, #ff4500, #25f4ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #27272A;
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #3f3f46;
+}
+
+/* Sidebar styles */
+#sidebar {
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, padding 0.3s ease-in-out;
+    flex-shrink: 0;
+}
+@media (max-width: 639px) {
+    #sidebar {
+        position: absolute;
+        height: 100%;
+        transform: translateX(-100%);
+    }
+    #sidebar.is-open {
+        transform: translateX(0);
+    }
+}
+@media (min-width: 640px) {
+    #sidebar {
+        position: relative;
+        transform: translateX(0);
+    }
+    #sidebar.is-collapsed {
+        width: 0 !important;
+        padding: 0;
+        overflow: hidden;
+    }
+}
+
+/* Typewriter cursor */
+.typing-cursor {
+    display: inline-block;
+    width: 9px;
+    height: 1.1em;
+    background-color: #E5E7EB;
+    animation: blink 1s step-end infinite;
+    vertical-align: bottom;
+    margin-left: 2px;
+}
+@keyframes blink {
+    from, to { background-color: transparent }
+    50% { background-color: #E5E7EB; }
+}
+
+/* Markdown formatting */
+.message-content strong {
+    font-weight: 600;
+    color: white;
+}
+.message-content a {
+    color: #38bdf8;
+    text-decoration: underline;
+    text-decoration-color: #38bdf84d;
+    transition: all 0.2s ease-in-out;
+}
+.message-content a:hover {
+    color: #7dd3fc;
+    text-decoration-color: #7dd3fc80;
+}
+
+/* --- ALTERNATING SPINNER ANIMATION --- */
+.spinner {
+    z-index: 2;
+    animation: rotate 2s linear infinite;
+}
+
+.path {
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+/* State One: Original Gradient */
+.spinner.state-one .path {
+    stroke: url(#spinner-gradient);
+}
+
+/* State Two: Sheer Red/Yellow Gradient */
+.spinner.state-two .path {
+    stroke: url(#red-yellow-gradient);
+}
+
+/* State Three: Green/Blue Gradient */
+.spinner.state-three .path {
+    stroke: url(#green-blue-gradient);
+}
+
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+/* --- END OF SPINNER STYLES --- */
+
+
+/* --- SEARCH BUTTON STYLES --- */
+#search-toggle-btn {
+    background-color: transparent;
+    border-color: transparent;
+    color: #6b7280; /* Muted gray text */
+}
+
+#search-toggle-btn.search-active {
+    border-color: #25f4ee; /* Cyan */
+    color: #25f4ee;
+    background-color: rgba(37, 244, 238, 0.1); /* Subtle cyan glow */
+}
+
+/* --- SEND BUTTON STATES --- */
+#send-btn {
+    background-color: transparent;
+    color: #6b7280; /* Muted gray color */
+    cursor: not-allowed;
+}
+
+#send-btn.send-active {
+    background-image: linear-gradient(to right, #ec4899, #22d3ee); /* pink-500 to cyan-400 */
+    color: white;
+    cursor: pointer;
+}
+
+#send-btn.send-active:hover {
+    opacity: 0.9;
+}
+
+#send-btn.send-active:active {
+    transform: scale(0.9);
+}
