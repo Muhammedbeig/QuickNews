@@ -1,73 +1,91 @@
-QuickNews: AI-Powered News Summarizer & Insight Engine
+# QuickNews: AI-Powered News Summarizer & Insight Engine
+
 <div align="center">
 
-An intelligent web application that uses the Google Gemini API to provide instant summaries of news articles, answer complex questions, and deliver insights with a modern, conversational UI.
+An intelligent web application that leverages the **Google Gemini API** to instantly summarize news articles, answer complex questions, and deliver insights through a modern, conversational UI.
 
 </div>
 
-<p align="center">
-<a href="#about-the-project">About</a> •
-<a href="#key-features">Features</a> •
-<a href="#built-with">Tech Stack</a> •
-<a href="#getting-started">Getting Started</a> •
-<a href="#roadmap">Roadmap</a> •
-<a href="#contributing">Contributing</a>
-</p>
+---
 
-About The Project
-In today's fast-paced world, staying informed is crucial, but reading long articles can be time-consuming. QuickNews tackles this problem by acting as an intelligent agent that provides concise, AI-generated summaries from any article URL.
+## 📌 Table of Contents
+- [About](#about)
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-But it doesn't stop there. QuickNews also functions as a powerful answer engine. Ask it any question, and it will use the Google Gemini API and a concurrent web-scraping backend to deliver comprehensive, context-aware answers. Built with a robust Django backend and a sleek, responsive vanilla JavaScript frontend, QuickNews is designed for a seamless and intuitive user experience.
+---
 
-Key Features
-🤖 Dual-Mode AI Processing: Intelligently handles two types of input:
+## 📰 About
 
-URL Summarization: Paste any news article link to get a quick, accurate summary, author details, and sentiment analysis.
+In today's fast-paced world, staying informed is essential — but reading lengthy articles can be time-consuming.  
+**QuickNews** solves this by providing **concise, AI-generated summaries** from any news article URL.
 
-Intelligent Q&A: Ask complex questions in natural language to get direct answers powered by the Google Gemini API.
+It’s more than just a summarizer — QuickNews is also an **answer engine**. You can ask any question, and it will:
+- Perform a **web search** (if needed)
+- Scrape and analyze multiple top sources **concurrently**
+- Use the **Google Gemini API** to deliver accurate, context-aware responses
 
-🌐 Context-Aware Search: For questions requiring up-to-date information, the app performs a web search, scrapes the top results concurrently, and feeds the context to the LLM for a rich, informed response.
+The app combines a **robust Django backend** with a **sleek, responsive JavaScript frontend** for a seamless experience.
 
-⚡ High-Performance Backend: Built with Django and optimized with concurrent web scraping to ensure fast, non-blocking responses even when gathering data from multiple sources.
+---
 
-✨ Modern Conversational UI: A clean, chat-based interface built with Tailwind CSS and vanilla JavaScript that provides a fluid, app-like experience.
+## ✨ Key Features
 
-🗂️ Persistent Chat History: All your summarized articles are saved and grouped by date, allowing you to revisit them anytime.
+- **🤖 Dual-Mode AI Processing**
+  - **URL Summarization**: Paste a news link to get a quick, accurate summary, author details, and sentiment analysis.
+  - **Intelligent Q&A**: Ask natural-language questions and receive direct, AI-powered answers.
 
-Built With
-This project combines a powerful backend with a modern frontend stack.
+- **🌐 Context-Aware Search**
+  - Automatically searches the web and scrapes top results when additional context is needed.
 
-Backend
+- **⚡ High-Performance Backend**
+  - Built with Django and **optimized for concurrency** in web scraping to keep responses fast.
 
-Frontend
+- **💬 Modern Conversational UI**
+  - Clean, chat-based interface styled with Tailwind CSS for a smooth, app-like feel.
 
-AI / NLP
+- **🗂 Persistent Chat History**
+  - Save and revisit all summarized articles, grouped by date.
 
+---
 
+## 🛠 Tech Stack
 
+**Backend**
+- Django
+- Concurrent web scraping
 
+**Frontend**
+- Vanilla JavaScript
+- Tailwind CSS
 
+**AI / NLP**
+- Google Gemini API
+- NLTK
+- Newspaper3k
+- TextBlob
+- BeautifulSoup
 
+---
 
+## 🚀 Getting Started
 
+Follow these steps to set up QuickNews locally.
 
+### **Prerequisites**
+- Python 3.10+
+- API Key from [Google AI Studio](https://aistudio.google.com/)
 
-
-NLTK, Newspaper3k, TextBlob, BeautifulSoup
-
-Getting Started
-To get a local copy up and running, follow these simple steps.
-
-Prerequisites
-Python 3.10 or higher
-
-An API key from Google AI Studio
-
-Installation
-Clone the repository:
-
-git clone https://github.com/Muhammedbeig/QuickNews.git
-cd QuickNews
+### **Installation**
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Muhammedbeig/QuickNews.git
+   cd QuickNews
 
 Create and activate a virtual environment:
 
